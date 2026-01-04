@@ -4,7 +4,7 @@ const fs = require('fs');
 const config = require('../config/environment');
 
 // Crear directorio de uploads si no existe
-const uploadDir = config.uploads.path;
+const uploadDir = config.uploads?.path || path.join(process.cwd(), 'uploads');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
   console.log(`📁 Directorio de uploads creado: ${uploadDir}`);
