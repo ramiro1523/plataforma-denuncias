@@ -1,0 +1,6 @@
+
+# Ignorar cosas locales que no quiero subir
+BackEnd/
+BackEnd_2.rar
+BackEnd_2/FrontEnd/
+BackEnd_2/BackEnd/scripts/testConn.js
